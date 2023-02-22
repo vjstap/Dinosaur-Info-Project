@@ -1,1 +1,0 @@
-# Dinosaur Info Project

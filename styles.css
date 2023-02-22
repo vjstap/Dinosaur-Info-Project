@@ -1,0 +1,24 @@
+a {
+    text-decoration: none; color: #598B2C;
+}
+a:focus {
+    color: #598B2C;
+}
+a:visited {
+    color:#94DB80;
+  }
+  a:hover {
+    color: white;
+}
+p {
+    color: #71B340; padding: 20px; width: 50vw;
+}
+footer {
+    text-align: center; font-weight: bold;
+}
+html {
+    background-color: #11270b;
+}
+.titlecolors {
+    color: #3F8F28;
+}
