@@ -11,8 +11,9 @@ a:visited {
     color: white;
 }
 p {
-    color: #71B340; padding: 5px; width: 40vw;
+    color: #71B340; padding: 5px; width: 35vw;
 }
+/* make the text size change with resolution change */
 footer {
     text-align: center; font-weight: bold;
 }
