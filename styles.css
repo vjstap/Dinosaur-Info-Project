@@ -1,5 +1,6 @@
 a {
-    text-decoration: none; color: #598B2C;
+    text-decoration: none; 
+    color: #598B2C;
 }
 a:focus {
     color: #598B2C;
@@ -11,11 +12,14 @@ a:visited {
     color: white;
 }
 p {
-    color: #71B340; padding: 5px; width: 35vw;
+    color: #71B340; 
+    padding: 5px; 
+    width: 35vw;
 }
 /* make the text size change with resolution change */
 footer {
-    text-align: center; font-weight: bold;
+    text-align: center; 
+    font-weight: bold;
 }
 html {
     background-color: #11270b;
@@ -24,12 +28,41 @@ html {
     color: #3F8F28;
 }
 html {
-    margin-left: 5px; margin-right: 5px;
-}
-.item1{
-    background-color: #422b15;
-    width: 7vw; height: 25vw; font-size: 1.3vw;
+    margin-left: 5px; 
+    margin-right: 5px;
 }
 .grid-container{
-    display: grid; grid-column-start: 1vw;
+    display: grid; 
+    grid-column-start: 1vw;
+    float: left;
+    padding: .5vw;
+}
+td{
+    border: 2px solid black; 
+    border-collapse: collapse;
+    padding: .4vw;
+    font-weight: bold;
+}
+table{
+    width: fit-content; 
+    border-collapse: collapse; 
+    background-color: #422b15;
+    text-align: center;
+}
+.dinosaur-intro{
+    float: left;
+}
+img{
+    height: 20vw;
+    width: 35vw;
+}
+button{
+    background-color: #265818;
+    float: right;
+}
+.homebuttonlink{
+    font-size: large;
+}
+.footersection{
+    clear: both;
 }
