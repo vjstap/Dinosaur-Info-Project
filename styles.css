@@ -11,7 +11,7 @@ a:visited {
   a:hover {
     color: white;
 }
-p {
+.paragraphs {
     color: #71B340; 
     padding: 5px; 
     width: 35vw;
@@ -65,4 +65,14 @@ button{
 }
 .footersection{
     clear: both;
+    color: #71B340;
+}
+.source{
+    font-size: 11px;
+    color: rgb(41, 112, 41);
+    margin: 0px;
+}
+hr{
+    border: none;
+    border-top: 3px solid rgb(255, 255, 255);
 }
