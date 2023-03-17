@@ -64,8 +64,10 @@
         </div>
         <div class="footersection">
         <p>For more information</p> 
-        <a href="https://en.wikipedia.org/wiki/Stegosaurus">Wikipedia</a>
+        <button id="iframebutton" onclick="toggle(this);">Show Wikipedia</button>
+        <script src="script.js"></script>
+        <iframe id="wikipediaiframe" src="https://en.wikipedia.org/wiki/Stegosaurus" title="Stegosaurus Wikipedia" hidden>Wikipedia</iframe>
         <footer>Copyright © 2023 Vincent Stapley</footer>
-    </div>
+        </div>
     </body>
 </html>

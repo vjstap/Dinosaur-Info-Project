@@ -66,6 +66,11 @@ button{
 .footersection{
     clear: both;
     color: #71B340;
+    text-align: center;
+    padding-top: .3vw;
+    padding-bottom: .3vw;
+    background-color: #081b03;
+    font-size: large;
 }
 .source{
     font-size: 11px;
@@ -75,4 +80,17 @@ button{
 hr{
     border: none;
     border-top: 3px solid rgb(255, 255, 255);
+}
+iframe{
+    width: 90vw;
+    height: 45vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: 0px;
+}
+#iframebutton{
+    float: none;
+}
+#wikipediaiframe{
+    display: hidden;
 }
