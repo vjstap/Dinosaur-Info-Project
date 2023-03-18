@@ -9,4 +9,3 @@ let toggle = button => {
       button.innerText = "Show Wikipedia";
     }
   }
-  

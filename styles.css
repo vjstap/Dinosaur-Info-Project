@@ -6,7 +6,7 @@ a:focus {
     color: #598B2C;
 }
 a:visited {
-    color:#94DB80;
+    color: none;
   }
   a:hover {
     color: white;
@@ -14,7 +14,7 @@ a:visited {
 .paragraphs {
     color: #71B340; 
     padding: 5px; 
-    width: 35vw;
+    font-size: 17px;
 }
 /* make the text size change with resolution change */
 footer {
@@ -50,11 +50,11 @@ table{
     text-align: center;
 }
 .dinosaur-intro{
-    float: left;
+    margin: auto;
+    width: 50vw;
 }
 img{
-    height: 20vw;
-    width: 35vw;
+    width: 100%;
 }
 button{
     background-color: #265818;
