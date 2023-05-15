@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
     text-decoration: none; 
     color: #598B2C;
@@ -6,7 +11,7 @@ a:focus {
     color: #598B2C;
 }
 a:visited {
-    color: none;
+    color: inherit;
   }
   a:hover {
     color: white;
@@ -16,7 +21,6 @@ a:visited {
     padding: 5px; 
     font-size: 17px;
 }
-/* make the text size change with resolution change */
 footer {
     text-align: center; 
     font-weight: bold;
@@ -24,18 +28,11 @@ footer {
 html {
     background-color: #11270b;
 }
+.background-color{
+    background-color: #11270b;
+}
 .titlecolors {
     color: #3F8F28;
-}
-html {
-    margin-left: 5px; 
-    margin-right: 5px;
-}
-.grid-container{
-    display: grid; 
-    grid-column-start: 1vw;
-    float: left;
-    padding: .5vw;
 }
 td{
     border: 2px solid black; 
@@ -51,7 +48,7 @@ table{
 }
 .dinosaur-intro{
     margin: auto;
-    width: 50vw;
+    width: 40vw;
 }
 img{
     width: 100%;
@@ -71,6 +68,10 @@ button{
     padding-bottom: .3vw;
     background-color: #081b03;
     font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .source{
     font-size: 11px;
@@ -88,9 +89,156 @@ iframe{
     padding-right: 5vw;
     border: 0px;
 }
-#iframebutton{
+.iframebutton{
     float: none;
 }
-#wikipediaiframe{
-    display: hidden;
+.wikipediaiframe{
+    width: 90%;
+    height: 45vh;
+    border: 0px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 50px; 
+    height: 100vh;
+    background-color: #000000; 
+    color: white;
+    overflow: auto;
+    transition: width 0.5s ease-in-out;
+}
+.sidebar:hover {
+    width: 200px;
+    color: black;
+    background-color: black;
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sidebar a img{
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    filter: invert(0);
+    transition: filter 0.3s;
+}
+.sidebar a:hover {
+    background-color: white; 
+    color: black;
+    opacity: 1;
+}
+.sidebar a::after {
+    content: attr(data-text);
+    display: none;
+}
+.sidebar a:hover::after {
+    display: block;
+}
+.sidebar a span {
+    display: inline;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar:hover a span {
+    opacity: 1;
+}
+
+.sidebar a:hover span {
+    color: black;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    background-image: url('images/sidebar-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-body { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.main-container {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 200px);
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content-wrapper {
+    background-color: #11270b;
+    background-image: url('images/content-bg.jpg');  
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1.titlecolors {
+    padding: 10px;
+    background-color: #11270b; 
+    border-bottom: 2px solid white;
+}
+.top-section {
+    top: 0;
+    background-color: #11270b;
+    width: 100%;
 }

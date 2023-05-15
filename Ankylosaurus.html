@@ -1,57 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPB3D74FNS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DPB3D74FNS');
-</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPB3D74FNS"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="styles.css">
-        <title>Info</title>
+        <title>Ankylosaurus Info</title>
     </head>
     <body>
-        <button><a href="index.html" class="homebuttonlink">Home</a></button>
-        <h1 class="titlecolors">Ankylosaurus</h1>
-        <hr>
-        <div class="grid-container">
-            <table >
-                <tr>
-                    <td><h2 class="titlecolors">Dinosaurs</h2></td>
-                </tr>
-                <tr>
-                    <td><a href="stegosaurus.html">Stegosaurus</a></td>
-                </tr>
-                <tr>
-                    <td><a href="Tyrannosaurus Rex.html">Tyrannosaurus Rex</a></td>
-                </tr>
-                <tr>
-                    <td><a href="Triceratops.html">Triceratops</a></td>
-                </tr>
-                <tr>
-                    <td><a href="Ankylosaurus.html">Ankylosaurus</a></td>
-                </tr>
-            </table>
+        <header class="top-section">
+            <h1 class="titlecolors">Ankylosaurus</h1>
+        </header>
+        <div class="main-body">
+            <nav class="sidebar">
+                <a class="nav-link" href="index.html">
+                    <img src="sidebar-images/trex-skull-white.png" data-hover-src="sidebar-images/trex-skull-black.png" alt="T-Rex Skull">
+                    <span>Home</span>
+                </a>                
+                <a class="nav-link" href="stegosaurus.html">
+                    <span>Stegosaurus</span>
+                </a>
+                <a class="nav-link" href="Tyrannosaurus-Rex.html">
+                    <span>Tyrannosaurus Rex</span>
+                </a>
+                <a class="nav-link" href="Triceratops.html">
+                    <span>Triceratops</span>
+                </a>
+                <a class="nav-link" href="Ankylosaurus.html">
+                    <span>Ankylosaurus</span>
+                </a>
+            </nav>             
+            <div class="main-container">
+                <div class="content">
+                    <div id="content-wrapper">
+                        <main class="dinosaur-intro">
+                            <p class="paragraphs">
+                                
+                            <img id="myImg" src="images/" alt="" style="width:100%;max-width:300px">
+                                <div id="myModal" class="modal">
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                                </div>
+                            <p class="source">
+                            <a href=""></a>
+                            </p>
+                            <p class="paragraphs">
+                               
+                            </p>
+                                <img id="myImg" src="images/" alt="" style="width:100%;max-width:300px;"> 
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                                </div>
+                                <p class="source"> 
+                            <a href=""></a>
+                            </p>
+                        </main>
+                        <div class="footersection">
+                            <p>For more information</p>
+                            <button class="iframebutton" onclick="toggle(this);">Show Wikipedia</button>
+                            <iframe class="wikipediaiframe" src="https://en.wikipedia.org/wiki/Ankylosaurus" title="Ankylosaurus Wikipedia" hidden></iframe>
+                        </div>
+                        <footer>Copyright © 2023 Vincent Stapley</footer>
+                    </div>
+                </div>
             </div>
-        <div class="dinosaur-intro">
-        <p class="paragraphs">
-
-        </p>
-            <img>
-        <p class="paragraphs">
-
-        </p>
-            <img>
         </div>
-    <div class="footersection">
-        <p>For more information</p>
-        <button id="iframebutton" onclick="toggle(this);">Show Wikipedia</button>
-        <script src="script.js"></script>
-        <iframe id="wikipediaiframe" src="https://en.wikipedia.org/wiki/Ankylosaurus" title="Ankylosaurus Wikipedia" hidden>Wikipedia</iframe>
-        <footer>Copyright © 2023 Vincent Stapley</footer>
-    </div>
-    </body>    
+    </body>
 </html>
