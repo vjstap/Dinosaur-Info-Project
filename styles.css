@@ -158,6 +158,8 @@ iframe{
     transition: background-color 0.3s, color 0.3s;
     opacity: 1;
     transition: opacity 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .sidebar a img{
     width: 20px;
