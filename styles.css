@@ -141,7 +141,7 @@ iframe{
     height: 100vh;
     background-color: #000000; 
     color: white;
-    overflow: auto;
+    overflow: hidden;
     transition: width 0.5s ease-in-out;
 }
 .sidebar:hover {
