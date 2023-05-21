@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPB3D74FNS"></script>
-        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-images/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon-images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon-images/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon-images/android-chrome-512x512.png">
         <link rel="stylesheet" href="styles.css">
-        <title>Triceratops Info</title>
+            <title>Triceratops Info</title>
     </head>
     <body>
         <header class="top-section">
-            <h1 class="titlecolors">Triceratops</h1>
+            <h1 class="titlecolors">Dinosaur Info</h1>
         </header>
         <div class="main-body">
             <nav class="sidebar">
                 <a class="nav-link" href="index.html">
-                    <img src="sidebar-images/trex-skull-white.png" data-hover-src="sidebar-images/trex-skull-black.png" alt="T-Rex Skull">
+                    <img src="sidebar-images/home-icon-white.png" data-hover-src="sidebar-images/home-icon-black.png" alt="T-Rex Skull">
                     <span>Home</span>
-                </a>                
+                </a>
+                <a class="nav-link" href="dinosaurs.html">
+                    <img src="sidebar-images/trex-skull-white.png" data-hover-src="sidebar-images/trex-skull-black.png" alt="Home">
+                    <span>Dinosaurs</span>
+                </a>
+                <a class="nav-link" href=".html">
+                    <img src="sidebar-images/3-pyramid-white.png" data-hover-src="sidebar-images/3-pyramid-black.png" alt="Pyramid w/ 3 Levels">
+                    <span>Classification</span>
+                </a>
+                <a class="nav-link" href=".html">
+                    <img src="sidebar-images/" data-hover-src="sidebar-images/" alt="">
+                    <span>Timeline</span>
+                </a>
+                <a class="nav-link" href=".html">
+                    <img src="sidebar-images/" data-hover-src="sidebar-images/" alt="">
+                    <span>Fossil Gallery</span>
+                </a>
                 <a class="nav-link" href="stegosaurus.html">
                     <span>Stegosaurus</span>
                 </a>
@@ -30,37 +50,41 @@
                 </a>
             </nav>             
             <div class="main-container">
-                <div class="content">
+                <div class="content"> 
                     <div id="content-wrapper">
                         <main class="dinosaur-intro">
+                            <h2 class="titlecolors">Triceratops</h2>
                             <p class="paragraphs">
-                                
-                            <img id="myImg" src="images/" alt="" style="width:100%;max-width:300px">
+                               
+                            </p>
+                            <img class="myImg" src="images/.jpg" alt="example" style="width:100%;max-width:300px">
                                 <div id="myModal" class="modal">
                                 <img class="modal-content" id="img01">
                                 <div id="caption"></div>
                                 </div>
-                            <p class="source">
-                            <a href=""></a>
+                            <p class="source">example
+                            <a href="example">example</a>
                             </p>
                             <p class="paragraphs">
-                               
+                                
                             </p>
-                                <img id="myImg" src="images/" alt="" style="width:100%;max-width:300px;"> 
+                            <img class="myImg" src="images/.jpg" alt="example" style="width:100%;max-width:300px">
+                                <div id="myModal" class="modal">
                                 <img class="modal-content" id="img01">
                                 <div id="caption"></div>
                                 </div>
-                                <p class="source"> 
-                            <a href=""></a>
+                            <p class="source">example
+                            <a href="example">example</a>
                             </p>
                         </main>
                         <div class="footersection">
-                            <p>For more information</p>
-                            <button class="iframebutton" onclick="toggle(this);">Show Wikipedia</button>
-                            <iframe class="wikipediaiframe" src="https://en.wikipedia.org/wiki/Ankylosaurus" title="Ankylosaurus Wikipedia" hidden></iframe>
-                        </div>
-                        <footer>Copyright © 2023 Vincent Stapley</footer>
+                        <p>For more information</p>
+                        <button class="iframebutton" onclick="toggle(this);">Show Wikipedia</button>
+                        <script src="script.js"></script>
+                        <iframe class="wikipediaiframe" src="https://en.wikipedia.org/wiki/Triceratops" title="Wikipedia" hidden></iframe>
+                        </div> 
                     </div>
+                    <footer>Copyright © 2023 Vincent Stapley</footer>
                 </div>
             </div>
         </div>
