@@ -265,3 +265,7 @@ h1.titlecolors{
     background-color: #11270b;
     width: 100%;
 }
+.link-images{
+    width: 100%;
+    max-width: 300px;
+}
